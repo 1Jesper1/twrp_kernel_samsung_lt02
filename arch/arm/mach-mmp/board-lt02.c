@@ -1585,8 +1585,8 @@ static struct bt532_ts_platform_data bt532_ts_pdata = {
 	.gpio_int		= TSP_INT_LT02_R0_0,
 	.x_resolution	= 599,
 	.y_resolution	= 1023,
-	.page_size	= 128,
-	.orientation	= 0x00,
+	.page_size	    = 128,
+	.orientation	= CONFIG_TOUCHSCREEN_BT532_TS_ORIENTATION,
 };
 
 static int __init bt532_ts_init(void)
